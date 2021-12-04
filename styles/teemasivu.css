@@ -1,0 +1,292 @@
+body {
+    font-family: Segoe UI
+}
+#content {
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "nav pictures pictures pictures pictures"
+    "nav article article article article"
+    "footer footer footer footer footer";
+     
+}
+header {
+    grid-area: header;
+    background-color: rgb(240, 140, 0);
+    display: flex;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;   
+}
+header img {
+    margin: 10px 10px 10px 10px;
+    height: 80px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(240, 140, 0);
+    border-radius: 5px;
+    border: 2px solid black;
+    min-width: 150px;
+}
+
+.Brave {
+    background-image: url(../images/cat.jpg);
+    background-size: cover;
+    height: 200px;
+    max-width: auto;
+    box-sizing: border-box;
+    flex: 1;
+    border: solid 10px rgb(240, 140, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+   
+}
+.Brave:hover {
+    border: 10px solid rgb(240, 140, 0)
+}
+
+.Intelligent {
+    background-image: url(../images/light.jpg);
+    background-size: cover;
+    height: 200px;
+    max-width: auto;
+    box-sizing: border-box;
+    flex: 1;
+    border: solid 10px rgb(240, 140, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+
+}
+.Intelligent:hover {
+    border: 10px solid rgb(225, 0, 105)
+}
+.Fair {
+    background-image: url(../images/judge.jpg);
+    background-size: cover;
+    height: 200px;
+    max-width: auto;
+    box-sizing: border-box;
+    flex: 1;
+    border: solid 10px rgb(240, 140, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+
+}
+.Fair:hover {
+    border: 10px solid rgb(0, 175, 215)
+}
+.Responsible {
+    background-image: url(../images/eco.jpg);
+    background-size: cover;
+    height: 200px;
+    max-width: auto;
+    box-sizing: border-box;
+    flex: 1;
+    border: solid 10px rgb(240, 140, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+
+}
+.Responsible:hover {
+    border: 10px solid rgb(45, 170, 55);
+    
+    
+}
+#pictures {
+    grid-area: pictures;
+    display: flex;
+    column-gap: 10px;
+}
+
+h3 {
+    margin: 5px 5px 5px;
+}
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+li a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 10px 10px 10px;
+    
+  }
+li a:hover {
+    background-color: rgb(253, 210, 120);
+    border-radius: 5px; 
+  }
+
+article {
+
+    grid-area: article;
+    background-color: rgb(235, 210, 120);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    background: rgb(240, 140, 0);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
+footer img {
+    height: 80px;
+    padding: 10px;
+    margin-left: auto;
+}
+tr,td {
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #content {
+    grid-template-areas: 
+    "header header header header"
+    "nav pictures pictures pictures"
+    "nav article article article"
+    "footer footer footer footer";
+    }
+    #pictures{
+        
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+   
+    .Responsible {
+        
+        background-image: none;
+        border: none;
+        color: black;
+        background: rgb(253, 210, 120);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        flex: 1;
+        height: 20px;
+        padding: 2px;
+        
+    }   
+    .Responsible:hover {
+        background-color: rgb(240, 140, 0);
+        border: 2px solid rgb(45, 170, 55)
+    }
+    .Brave {
+       
+        background-image: none;
+        border: none;
+        color: black;
+        background: rgb(253, 210, 120);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        flex: 1;
+        height: 20px;
+        padding: 2px;
+
+    }
+    .Brave:hover {
+        background-color: rgb(240, 140, 0);
+        border: 2px solid rgb(240, 140, 0)
+    } 
+    .Fair {
+        
+        background-image: none;
+        border: none;
+        color: black;
+        background: rgb(253, 210, 120);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        flex: 1;
+        height: 20px;
+        padding: 2px;
+    }
+    .Fair:hover {
+        background-color: rgb(240, 140, 0);
+        border: 2px solid rgb(0, 175, 215)
+    }
+    .Intelligent {
+       background-image: none;
+       border: none;
+       color: black;
+       background: rgb(253, 210, 120);
+       border: 2px solid black;
+       border-radius: 5px;
+       font-size: 1em;
+       font-weight: bold;
+       text-align: center;
+       flex: 1;
+       height: 20px;
+       padding: 2px;
+    }
+    .Intelligent:hover {
+        background-color: rgb(240, 140, 0);
+        border: 2px solid rgb(225, 0, 105)
+    }
+    
+    footer img {
+        display: none;
+    }
+    }
+ 
+ @media screen and (max-width: 576px) {
+    #content {
+        grid-template-areas: "header" "pictures" "article" "footer";
+    }
+   
+     nav {
+        min-width: 20px;
+        position: absolute;
+        height: 186px;
+        top: 111px;
+        content-visibility: hidden ;
+        
+
+     }
+     nav:hover {
+        width: 150px;
+        content-visibility: visible;
+     }
+    nav a:hover{
+         content-visibility: visible;
+     }
+   
+     
+    }
+ 
